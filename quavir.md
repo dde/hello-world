@@ -1,4 +1,4 @@
-
+#VQA 
 # Execution
 
 The program can be used to test the execution of any VoiceXML 2.1 application under the control of a test plan.
@@ -9,23 +9,23 @@ The tool will read and execute one or more test plans in the order they are list
 
 ## Execution
 A test plan contains the starting URL of a VoiceXML server. The test plan executer is a modified VoiceXML interpreter. It reads and follows the XML test plan to
-1 request a VoiceXML document from the server
-2 verify arbitrary elements of the received document, matching structure, attribute values, and element CDATA, using regular expressions
-3 provide the input expected by the VoiceXML document
-4 execute the VoiceXML document to determine the next URL expected by the server
-5 connect to the server and post a request for the next document
-6 receive the next document from the server
-7 continue following the plan until a disconnect test plan step is executed
-8 execute any subsequent dialogs in the plan until the plan is complete.
+1.  request a VoiceXML document from the server
+2.  verify arbitrary elements of the received document, matching structure, attribute values, and element CDATA, using regular expressions
+3.  provide the input expected by the VoiceXML document
+4.  execute the VoiceXML document to determine the next URL expected by the server
+5.  connect to the server and post a request for the next document
+6.  receive the next document from the server
+7.  continue following the plan until a disconnect test plan step is executed
+8.  execute any subsequent dialogs in the plan until the plan is complete.
 
 ===Command Line===
 Using the distributed <tt>.jar</tt> file, the command to start the test tool in a Terminal or Command Tool window is:
 
  <tt>java -jar distribution.jar com.voxeo.application.Driver [options] [test-plans]</tt>
 ====Options====
-* -l the output logging level; can be ''trace'', ''debug'', ''info'', ''warn'', or ''error'', in increasing importance; log messages will be written for the selected level and any higher importance; the default is ''info''; the ''trace'' level writes VXML and &lt;data&gt; responses from the server(s)
-* -t the number threads to start; the default is 1; see Multiple Threads below about thread logging
-* -h a list of the options is displayed without further execution
+*   -l the output logging level; can be ''trace'', ''debug'', ''info'', ''warn'', or ''error'', in increasing importance; log messages will be written for the selected level and any higher importance; the default is ''info''; the ''trace'' level writes VXML and &lt;data&gt; responses from the server(s)
+*   -t the number threads to start; the default is 1; see Multiple Threads below about thread logging
+*   -h a list of the options is displayed without further execution
 
 ===Graphical Interface===
 Using the distributed <tt>.jar</tt> file, the command to start the test tool graphical interface is:
