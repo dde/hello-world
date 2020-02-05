@@ -1,23 +1,22 @@
-==_==
-__TOC__
-==Execution==
+
+# Execution
 
 The program can be used to test the execution of any VoiceXML 2.1 application under the control of a test plan.
 
-===Test Plans===
+## Test Plans
 
 The tool will read and execute one or more test plans in the order they are listed on the command line. See [[sandbox:quavir_test_plan|test plans]] for a description of a test plan file.
 
-====Execution====
+## Execution
 A test plan contains the starting URL of a VoiceXML server. The test plan executer is a modified VoiceXML interpreter. It reads and follows the XML test plan to
-#request a VoiceXML document from the server
-#verify arbitrary elements of the received document, matching structure, attribute values, and element CDATA, using regular expressions
-#provide the input expected by the VoiceXML document
-#execute the VoiceXML document to determine the next URL expected by the server
-#connect to the server and post a request for the next document
-#receive the next document from the server
-#continue following the plan until a disconnect test plan step is executed
-#execute any subsequent dialogs in the plan until the plan is complete.
+1 request a VoiceXML document from the server
+2 verify arbitrary elements of the received document, matching structure, attribute values, and element CDATA, using regular expressions
+3 provide the input expected by the VoiceXML document
+4 execute the VoiceXML document to determine the next URL expected by the server
+5 connect to the server and post a request for the next document
+6 receive the next document from the server
+7 continue following the plan until a disconnect test plan step is executed
+8 execute any subsequent dialogs in the plan until the plan is complete.
 
 ===Command Line===
 Using the distributed <tt>.jar</tt> file, the command to start the test tool in a Terminal or Command Tool window is:
