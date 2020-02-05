@@ -21,7 +21,7 @@ A test plan contains the starting URL of a VoiceXML server. The test plan execut
 ### Command Line
 Using the distributed <tt>.jar</tt> file, the command to start the test tool in a Terminal or Command Tool window is:
 
- <tt>java -jar distribution.jar com.voxeo.application.Driver [options] [test-plans]</tt>
+ <tt>java -jar distribution.jar com.snave.cobalt.application.Driver [options] [test-plans]</tt>
 #### Options
 *   -l the output logging level; can be ''trace'', ''debug'', ''info'', ''warn'', or ''error'', in increasing importance; log messages will be written for the selected level and any higher importance; the default is ''info''; the ''trace'' level writes VXML and &lt;data&gt; responses from the server(s)
 *   -t the number threads to start; the default is 1; see Multiple Threads below about thread logging
